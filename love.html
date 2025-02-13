@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background:rgb(239, 147, 147);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes fly {
+            0% { left: -150px; }
+            100% { left: 100%; }
+        }
+        .banner {
+            position: relative;
+            top: 10%;
+            background: rgb(199, 27, 27);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(245, 242, 242, 0.2);
+            font-size: 24px;
+            animation: fadeIn 2s ease-in-out;
+            display: inline-block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .photo {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .love-letter {
+            background: #dfdfc9;
+            padding: 20px;
+            max-width: 80%;
+            word-wrap: break-word;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="love_song.mp3" type="audio/mp3">
+    </audio>
+    <div>
+
+        <br>
+        <br>
+    </div>
+   
+    <h1 style="color: azure; font-variant: calc() ; text-shadow: 2px 1px #e53f3f;">Happy Valentine's Day, Amu!❤️</h1>
+
+    <div class="content">
+        <img src="our_photo.jpg" class="photo">
+        <div class="love-letter" style="font-style: calc(); color: rgb(212, 82, 95);">
+            <h3 style="font-family: cursive;">heyy dear, you make my heart soar higher than any flight 🛩️</h3>  
+           <h3 style="font-family: cursive;"> You are my happiness, my love, and my forever Valentine. </h3>
+            <h4 style="font-family: cursive;">Love you always! 🫂❤</h4>
+        </div>
+    </div>
+</body>
+</html>

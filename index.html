@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open the Surprise!</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: rgb(19, 18, 18);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .envelope {
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .envelope:hover {
+            transform: scale(1.1);
+        }
+        p {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="envelope.png" class="envelope" onclick="openValentine()">
+    <p>Click the envelope !! A surprise awaits 💌</p>
+
+    <script>
+        function openValentine() {
+            window.location.href = "valentine.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Will You Be My Valentine?</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: rgb(0, 0, 0);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .question {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background: rgb(231, 130, 130);
+            color: white;
+        }
+        .no {
+            background: white;
+            color: black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div  style="font-family: calc(); color: bisque; font-size:50px;" class="question">Will You Be My Valentine Yusuf ? </div>
+    <div class="buttons">
+        <button class="btn yes" onclick="goToLovePage()" style="font-size: 30px;">Yes ❤️</button>
+        <button class="btn no" onmouseover="moveButton()">No</button>
+    </div>
+
+    <script>
+        function goToLovePage() {
+            window.location.href = "love.html";
+        }
+
+        function moveButton() {
+            let button = document.querySelector('.no');
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
